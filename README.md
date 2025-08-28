@@ -1,26 +1,24 @@
-# bootstrap_install
-Step 1: Install Bootstrap via NPM
--> Run this command in your project folder:
-npm install bootstrap
-✅ Step 2: Import Bootstrap CSS into your project
-Open the file:
-📂 src/index.js
-(or src/main.jsx if you're using newer setups like Vite or custom builds).
-Add this import line at the very top:
-=> import 'bootstrap/dist/css/bootstrap.min.css';
+# 🚀 Bootstrap Setup in React
 
-Your index.js should now look something like this:
+## 1️⃣ Install Bootstrap
+```bash
+npm install bootstrap
+
+2️⃣ Import Bootstrap CSS
+Add this to src/index.js (or main.jsx if using Vite):
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+Example index.js:
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
- Step 3: Try Using Bootstrap
-Edit your App.js to test it out:
+3️⃣ Use Bootstrap in Components
+Edit App.js:
 function App() {
   return (
     <div className="container mt-5">
@@ -29,4 +27,4 @@ function App() {
     </div>
   );
 }
-
+export default App;
